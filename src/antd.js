@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import FormRender from './index';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
-import enUS from 'antd/lib/locale/en-US';
+import enUS from 'antd/lib/locale/en_US';
 import { mapping, widgets } from './widgets/antd';
 // import 'antd/dist/antd.css';
 

@@ -1,10 +1,10 @@
 {
   "name": "form-render-haisa",
-  "version": "1.8.7",
+  "version": "1.8.8",
   "description": "通过 JSON Schema 生成标准 Form，常用于自定义搭建配置界面生成",
   "repository": {
     "type": "git",
-    "url": "git@github.com:alibaba/form-render.git"
+    "url": "git@github.com/haisapan/form-render.git"
   },
   "keywords": [
     "FormRender",
@@ -16,16 +16,8 @@
   ],
   "contributors": [
     {
-      "name": "Tw93",
-      "email": "tw93@qq.com"
-    },
-    {
-      "name": "mankaiviky",
-      "email": "mankaiviky@163.com"
-    },
-    {
-      "name": "FateRiddle",
-      "email": "fateriddle@gmail.com"
+      "name": "Haisa",
+      "email": "haisapan@hotmail.com"
     }
   ],
   "scripts": {

@@ -2,25 +2,8 @@
   <img src="https://img.alicdn.com/tfs/TB17UtINiLaK1RjSZFxXXamPFXa-606-643.png" alt="logo" width="20%"/>
 </p>
 <h1 align= "center">
-FormRender
+FormRender-Haisa
 </h1>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/form-render?_blank">
-    <img alt="npm" src="https://img.shields.io/npm/v/form-render.svg?maxAge=3600&style=flat-square"></a>
-  <a href="https://github.com/alibaba/form-render/commits/dev">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/alibaba/form-render.svg?style=flat-square"></a>
-  <a href="https://github.com/alibaba/form-render">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alibaba/form-render"></a>
-  <a href="https://github.com/alibaba/form-render/issues?utf8=%E2%9C%93&q=">
-    <img alt = "GitHub closed issues" src="https://img.shields.io/github/issues-closed/alibaba/form-render.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/form-render">
-    <img alt = "NPM downloads" src="https://img.shields.io/npm/dm/form-render.svg?style=flat-square"></a>
-  <a href="https://npmjs.org/package/form-render">
-    <img alt = "NPM all downloads" src="https://img.shields.io/npm/dt/form-render.svg?style=flat-square"></a>
-  <a>
-    <img alt = "PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a>
-</p>
 
 > 通过 JSON Schema 生成标准 Form，常用于自定义搭建配置界面生成
 
@@ -30,7 +13,7 @@ FormRender
 - <a href="https://form-render.github.io/schema-generator/" target="_blank">schema 编辑器</a>
 - <a href="/_demos/index" target="_blank">Playground</a> / <a href="https://codesandbox.io/s/form-renderjichudemo-8k1l5" target="_blank">Code Sandbox</a>
 - <a href="/docs/guide/others/usedBy.md">常见场景</a>
-- <a href="https://github.com/alibaba/form-render/projects/2" target="_blank">后期规划</a>
+- <a href="https://github.com/haisapan/form-render/projects/2" target="_blank">后期规划</a>
 
 ## 效果
 
@@ -50,9 +33,9 @@ FormRender
 ## 安装
 
 ```shell
-npm i form-render
+npm i form-render-haisa
 # or
-yarn add form-render
+yarn add form-render-haisa
 ```
 
 同时安装依赖的组件库 (依赖哪个装哪个，天然支持 antd 和 fusion 两套。其他的组件库可通过 widgets 的方式传入，见文档 - 高级功能 - 自定义组件)
@@ -187,27 +170,7 @@ export default Demo;
 ## 调试
 
 ```shell
-> git clone https://github.com/alibaba/form-render.git
+> git clone https://github.com/haisapan/form-render.git
 > npm i
 > npm start
 ```
-
-## 支持
-
-- 在公司或个人项目中使用 FormRender，关注 <a href="/CHANGELOG.md" target="_blank">Changelog</a>
-- 如果你觉得 FormRender 还不错，可以通过 Star 来表示你的喜欢
-- 加入钉钉聊天群帮忙解答使用问题
-  <img src="https://img.alicdn.com/tfs/TB1CprJg5pE_u4jSZKbXXbCUVXa-894-1087.jpg" width="300px" />
-
-## 贡献
-
-想贡献代码、解 BUG 或者提高文档可读性？非常欢迎一起参与进来，在提交 MR 前阅读一下 [Contributing Guide](https://github.com/alibaba/form-render/blob/master/CONTRIBUTING.md)
-
-感谢给 FormRender 贡献代码的你们，以及 JetBrains 提供 Free 使用！
-
-<a href="https://github.com/alibaba/form-render/graphs/contributors"><img src="https://opencollective.com/form-render/contributors.svg?width=890&button=false"/></a><a href="https://www.jetbrains.com/?from=form-render"><img src="https://img.alicdn.com/tfs/TB1gPDDJKL2gK0jSZFmXXc7iXXa-2000-2168.png" width="100px" /></a>
-
-## 协议
-
-- 遵循 MIT 协议
-- 请自由地享受和参与开源

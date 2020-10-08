@@ -198,7 +198,7 @@ const fieldListHoc = ButtonComponent => {
             <div className="tr mb2">
               {canAdd && (
                 <ButtonComponent icon="add" onClick={this.handleAddClick}>
-                  新增
+                  Add
                 </ButtonComponent>
               )}
               {buttons &&

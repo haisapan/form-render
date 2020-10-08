@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import FormRender from './index';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
+import enUS from 'antd/lib/locale/en-US';
 import { mapping, widgets } from './widgets/antd';
 // import 'antd/dist/antd.css';
 
@@ -29,7 +30,7 @@ export default class AntdForm extends React.PureComponent {
       ...props
     } = this.props;
     return (
-      <ConfigProvider {...configProvider} locale={zhCN}>
+      <ConfigProvider {...configProvider} locale={enUS}>
         <FormRender
           {...props}
           mapping={{

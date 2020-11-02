@@ -106,7 +106,11 @@ function FormRender({
   const handleChange = (key, val) => {
     isUserInput.current = true;
     onChange(val);
-    debouncedValidate(getValidateList(val, schema));
+    if (debouncedValidate) {
+      debouncedValidate(getValidateList(val, schema));
+    } else {
+      onValidate(getValidateList(val, schema));
+    }
   };
 
   const updateValidation = () => {

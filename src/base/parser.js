@@ -80,8 +80,9 @@ function getBasicProps(settings, materials) {
     options, // 所有特定组件规则，addable等规则TODO
     hidden,
     required: required.indexOf(name) !== -1,
-    disabled: _disabled || disabled,
-    readonly: readOnly || readonly, // 前者全局的，后者单个ui的
+    disabled:
+      _disabled === null || _disabled === undefined ? disabled : _disabled,
+    readonly: readonly === null || readonly === undefined ? readOnly : readonly, // 单个ui的readonly定义了，则以单个为主； 否则以全局readOnly为主
     labelWidth: _labelWidth || labelWidth,
     useLogger,
     width,

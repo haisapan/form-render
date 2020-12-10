@@ -57,7 +57,7 @@ export const getValidateText = (obj = {}) => {
 
   // 校验是否为required
   if (required && isEmptyValue(finalValue, schema)) {
-    return (message && message.required) || '不能为空';
+    return (message && message.required) || 'this field is required.';
   }
   // 字符串相关校验
   if (type === 'string') {
@@ -74,7 +74,7 @@ export const getValidateText = (obj = {}) => {
     // TODO: 为了一个 isLength 去引入一个包有点过分了，有空自己改写一下，而且 antd 用的 async-validator，是不是可以考虑看看
     if (_finalValue && maxLength) {
       if (!isLength(_finalValue, 0, parseInt(maxLength, 10))) {
-        return (message && message.maxLength) || `长度不能大于 ${maxLength}`;
+        return (message && message.maxLength) || `Max Length is ${maxLength}`;
       }
     }
     if (_finalValue && (minLength || minLength === 0)) {
@@ -82,7 +82,7 @@ export const getValidateText = (obj = {}) => {
         !_finalValue ||
         !isLength(_finalValue, parseInt(minLength, 10), undefined)
       ) {
-        return (message && message.minLength) || `长度不能小于 ${minLength}`;
+        return (message && message.minLength) || `Min Length is ${minLength}`;
       }
     }
     // TODO: 为了一个Color引入了一个挺大的包，可以优化
@@ -99,7 +99,7 @@ export const getValidateText = (obj = {}) => {
   // 数字相关校验
   if (type === 'number') {
     if (typeof finalValue !== 'number') {
-      return '请填写数字';
+      return 'please input a number';
     }
     if (maximum && parseInt(finalValue, 10) > maximum) {
       return (message && message.maximum) || `数值不能大于 ${maximum}`;
